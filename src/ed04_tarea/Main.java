@@ -54,7 +54,18 @@ public class Main {
             System.out.print("Fallo…….");
 
         }
-        
+        //Añadimos un nuevo bloque de texto donde ahora se suma +100 al bono
+        try {
+
+            System.out.println(" Modificación 2");
+
+            cesta.ActualizarBono(+100);
+
+        } catch (Exception e) {
+
+            System.out.print("Fallo…….");
+
+        }
         double bonoactual = cesta.bonificacion();
 
         System.out.println("Su bono actual es  " + bonoactual);
